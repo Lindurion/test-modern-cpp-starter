@@ -1,11 +1,11 @@
 #include <fmt/format.h>
-#include <greeter/greeter.h>
+#include <toyapp/toyapp.h>
 
-using namespace greeter;
+using namespace toyapp;
 
-Greeter::Greeter(std::string _name) : name(std::move(_name)) {}
+ToyApp::ToyApp(std::string _name) : name(std::move(_name)) {}
 
-std::string Greeter::greet(LanguageCode lang) const {
+std::string ToyApp::greet(LanguageCode lang) const {
   switch (lang) {
     default:
     case LanguageCode::EN:
